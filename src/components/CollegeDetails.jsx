@@ -10,7 +10,7 @@ const CollegeDetails = () => {
   useEffect(() => {
     const fetchCollegeDetails = async () => {
       try {
-        const result = await axios.get(`http://localhost:5000/api/colleges/${courseName}`);
+        const result = await axios.get(`https://schoolbe.onrender.com/api/colleges/${courseName}`);
         setCollege(result.data);
       } catch (error) {
         console.error("Error fetching college details:", error);

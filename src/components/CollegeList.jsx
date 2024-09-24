@@ -9,7 +9,7 @@ const CollegeList = () => {
 
   useEffect(() => {
     const fetchColleges = async () => {
-      const result = await axios.get('http://localhost:5000/api/colleges');
+      const result = await axios.get('https://schoolbe.onrender.com/api/colleges');
       setColleges(result.data);
     };
     fetchColleges();
